@@ -45,6 +45,6 @@ jobs:
       - name: Update the Lambda function
         run: >
           aws lambda update-function-code
-          --function-name practicebackend21092026  
+          --function-name s12_help_desk  
           --s3-bucket ${{ secrets.ARTIFACTS_BUCKET }}
           --s3-key function.zip
