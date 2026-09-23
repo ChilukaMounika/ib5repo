@@ -1,7 +1,7 @@
 //const BASE_URL = "http://localhost:5000/api";
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL  || "/api"; // Use the environment variable for the API URL
-
+//const BASE_URL = import.meta.env.VITE_API_BASE_URL  || "/api"; // Use the environment variable for the API URL
+const BASE_URL = `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api`;
 async function request(endpoint, options = {}) {
   const url = `${BASE_URL}${endpoint}`;
   const config = {
